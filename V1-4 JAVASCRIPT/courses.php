@@ -10,38 +10,10 @@
     <meta name="description" content="E-LEARNING APPLICATION V1.0  E-Classe">
     <link rel="stylesheet" href="assets/css/Normalize.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>APPLICATION V1.3</title>
 </head>
 <body>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-2" style="background-color: #FAFFC1;">
@@ -59,7 +31,10 @@
                                 <div class="flex-column">
                                     <img src="assets/img/next.svg" class="btn" alt="image next">
                                 </div>
-                                <a href="add_course.php" class="btn  btn-info ">ADD NEW COURSE</a>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ADD NEW COURSE</button>
+                                <?php
+                                    include "add_course.php";
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -84,5 +59,8 @@
         </div>
     </div>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+ 
+    </script>
 </body>
 </html>

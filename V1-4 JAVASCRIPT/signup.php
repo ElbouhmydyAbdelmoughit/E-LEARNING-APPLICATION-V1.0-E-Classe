@@ -18,13 +18,13 @@
                 <h1 class="border-start border-5 border-info fw-bold ps-2 ms-5">E-class</h1>
             <h6 class="fw-bold text-center mt-5">SIGN UP</h6>
                 <label for="email" class="mb-2">Name</label><br>
-                <input type="text" name="name"  class="ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your name" required><br>
+                <input type="text" id="name" name="name"  class="ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your name"><br>
                 <label for="email" class="mb-2">Email</label><br>
-                <input type="email" name="email"  class="ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your email" required><br>
+                <input type="email" id="email" name="email"  class="ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your email"><br>
                 <label for="password" class="mb-2">Password</label><br>
-                <input type="password" name="password" class=" ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your password" required>
+                <input type="password" id="password" name="password" class=" ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your password">
                 <label for="password" class="mb-2 mt-3">Replay Password</label><br>
-                <input type="password" name="replay_password" class=" ps-3 py-2 border-secondery form-control fw-light" placeholder="Replay your password" required>
+                <input type="password" id="replay_password" name="replay_password" class=" ps-3 py-2 border-secondery form-control fw-light" placeholder="Replay your password">
                 <input type="submit" name="submit" value="SIGN UP" class="btn form-control mt-5 bg-info text-white">
                 </label>
             </div>

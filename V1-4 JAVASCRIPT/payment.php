@@ -31,7 +31,8 @@
                                 <div class="flex-column">
                                     <img src="assets/img/next.svg" class="btn" alt="image next">
                                 </div>
-                                <a href="add_payment.php" class="btn  btn-info ">ADD NEW PAYMENTS</a>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD NEW PAYMENTS</button>
+                                <?php include "add_payment.php";?>
                             </div>
                         </div>
                     </div>

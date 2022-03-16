@@ -12,13 +12,11 @@
          $requete=mysqli_fetch_assoc($qry);
         $count=mysqli_num_rows($qry);
         if ($count==1) {
-            $session_timeout=120;
             session_start();
             $_SESSION['usear']=$email; 
              $_SESSION['username']=$requete['name']; 
            header('location:dashboard.php');
             if (isset($_POST['remember'])) {
-                $remember_me_timeout=time() + 365*24*60*60;
                 setcookie('email',$email,$remember_me_timeout);
                 setcookie('password',$password,$remember_me_timeout);
 

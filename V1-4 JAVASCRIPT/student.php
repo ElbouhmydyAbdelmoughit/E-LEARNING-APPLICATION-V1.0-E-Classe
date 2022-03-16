@@ -31,7 +31,8 @@
                                 <div class="flex-column">
                                     <img src="assets/img/next.svg" class="btn" alt="image next">
                                 </div>
-                                <a href="add_students.php" class="btn  btn-info ">ADD NEW STUDENT</a>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD NEW STUDENT</button>
+                                <?php include "add_students.php";?>
                             </div>
                         </div>
                     </div>
