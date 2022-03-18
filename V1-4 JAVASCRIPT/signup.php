@@ -12,7 +12,7 @@
     <title>APPLICATION V1.0</title>
 </head>
 <body>
-<form method="POST" action="#">
+<form method="POST" action="#" name = "myForm" onsubmit="return validation()">
         <div class="p-5 " id="div_nbr_1" style=" background-image: linear-gradient(60deg,#00C1FE,#2ccafa,#FAFFC1); background-repeat: no-repeat;">
             <div class="w-50 container bg-white py-5 col-md-6 ps-4" id="div_nbr_2" style="border-radius: 20px;">
                 <h1 class="border-start border-5 border-info fw-bold ps-2 ms-5">E-class</h1>
@@ -20,7 +20,7 @@
                 <label for="email" class="mb-2">Name</label><br>
                 <input type="text" id="name" name="name"  class="ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your name"><br>
                 <label for="email" class="mb-2">Email</label><br>
-                <input type="email" id="email" name="email"  class="ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your email"><br>
+                <input type="text" id="email" name="email"  class="ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your email"><br>
                 <label for="password" class="mb-2">Password</label><br>
                 <input type="password" id="password" name="password" class=" ps-3 py-2 border-secondery form-control fw-light" placeholder="Enter your password">
                 <label for="password" class="mb-2 mt-3">Replay Password</label><br>
